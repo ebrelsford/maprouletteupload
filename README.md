@@ -4,6 +4,10 @@ Simply upload a GeoJSON file of tasks to [Maproulette](http://maproulette.org/).
 
 ## Installation
 
+```
+pip install git+git://github.com/ebrelsford/maprouletteupload.git
+```
+
 ## Usage
 
 Use via the command line:
