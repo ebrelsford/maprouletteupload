@@ -1,8 +1,8 @@
 import click
 import json
 
+from .api import get_challenge, upload_tasks
 from .tasks import create_tasks
-from .upload import upload_tasks
 
 # TODO use api to optionally create challenge too
 # TODO use api to figure out which tasks already exist
@@ -33,6 +33,11 @@ def upload(api_key, challenge_id, identifier, instruction, name, geojson_file):
         geojson = json.load(open(geojson_file, 'r'))
     else:
         geojson = json.load(click.get_text_stream('stdin'))
+
+    challenge = get_challenge(challenge_id)
+    if challenge is None:
+        click.echo('Challenge does not exist. Quitting.')
+        return
 
     create_tasks_kwargs = {
         'identifier_field': identifier,
