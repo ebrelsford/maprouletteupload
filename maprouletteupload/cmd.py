@@ -5,7 +5,6 @@ import webbrowser
 from .api import DIFFICULTIES, create_challenge, get_challenge, upload_tasks
 from .tasks import create_tasks
 
-# TODO use api to figure out which tasks already exist
 
 @click.command()
 @click.option('--api-key', help='Your API key, via Maproulette.')
