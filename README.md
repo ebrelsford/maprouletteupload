@@ -2,6 +2,12 @@
 
 Simply upload a GeoJSON file of tasks to [Maproulette](http://maproulette.org/).
 
+## Features
+
+Uses the [Maproulette API](https://github.com/maproulette/maproulette2/blob/master/docs/api.md) to:
+* Create a challenge if you don't already have one.
+* Create a task for each GeoJSON feature, pulling per-task identifiers and instructions out of the feature's properties.
+
 ## Installation
 
 ```
