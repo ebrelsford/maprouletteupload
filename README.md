@@ -19,7 +19,8 @@ Usage: maprouletteupload [OPTIONS]
 
 Options:
   --api-key TEXT          Your API key, via Maproulette.
-  --challenge-id INTEGER  The challenge ID these tasks should be added to.
+  --challenge-id INTEGER  The challenge ID these tasks should be added to. If
+                          not specified you will be prompted to create one.
   --geojson-file TEXT     A GeoJSON file of tasks to upload. Alternatively,
                           you can provide this file via stdin.
   --identifier TEXT       The name of the property to use as the identifier.

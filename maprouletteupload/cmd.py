@@ -9,7 +9,8 @@ from .tasks import create_tasks
 @click.command()
 @click.option('--api-key', help='Your API key, via Maproulette.')
 @click.option('--challenge-id', type=int,
-        help='The challenge ID these tasks should be added to.')
+        help=('The challenge ID these tasks should be added to. If not '
+            'specified you will be prompted to create one.'))
 @click.option('--identifier', type=str, default='identifier',
         help=('The name of the property to use as the identifier. Default: '
             '"identifier".'))
