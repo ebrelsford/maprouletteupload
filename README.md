@@ -42,6 +42,14 @@ Options:
 
 A task is made for each GeoJSON feature and the tasks are bulk uploaded to Maproulette.
 
+## Example
+
+If you have GeoJSON of tasks and have not created a challenge in Maproulette, you could create a challenge (you will be prompted for details) and upload the tasks by using:
+
+
+```
+maprouletteupload --api-key [YOUR_API_KEY] < tasks.geojson
+```
 
 ## License
 
